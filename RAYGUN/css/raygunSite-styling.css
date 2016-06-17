@@ -1,0 +1,122 @@
+@charset "UTF-8";
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #333 !important;
+	overflow: hidden;
+}
+.raygun h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	font-size: 3.5vw;
+	letter-spacing: 3.5vw;
+	overflow: hidden;
+	color: white;
+	position: absolute;
+	top: 60%;
+	left: 60%;
+}
+.content {
+	font-family: 'Lato', sans-serif;
+	margin: 50px;
+}
+.content h1 {
+	font-weight: 100 !important;
+	font-size: 40px;
+	letter-spacing: 30px;
+	color: white;
+}
+.content p {
+	font-weight: 100 !important;
+	font-size:20px;
+	color: #B4B4B4;
+}
+
+table {
+	text-align: center;
+	vertical-align: center;
+}
+.modal-content {
+	text-align: center;
+	color: white !important;
+	background: black !important;
+}
+/*Collapsible NavBar*/
+#sidebar-wrapper {
+	z-index: 9999999;
+	position: fixed;
+	right: 0;
+	width: 200;
+	height: 180px;
+	margin-right: -300px;
+	overflow-y: auto;
+	background: #222;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-ms-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	font-family: 'Lato', sans-serif;
+}
+.sidebar-nav {
+	position: absolute;
+	top: 0;
+	width: 200px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sidebar-nav li {
+	cursor: pointer;
+	text-indent: 20px;
+	line-height: 40px;
+}
+.sidebar-nav li a {
+	display: block;
+	text-decoration: none;
+	color: #999;
+}
+.sidebar-nav li a:hover {
+	text-decoration: none;
+	color: #fff;
+	background: rgba(255,255,255,0.2);
+}
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+	text-decoration: none;
+}
+.sidebar-nav > .sidebar-brand {
+	height: 45px;
+	font-size: 22px;
+	font-weight: 300;
+	letter-spacing: 5px;
+	line-height: 55px;
+}
+.sidebar-nav > .sidebar-brand a {
+	color: #999;
+}
+.sidebar-nav > .sidebar-brand a:hover {
+	color: #fff;
+	background: none;
+}
+#menu-toggle {
+	z-index: 9999999;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+#sidebar-wrapper.active {
+	right: 250px;
+	width: 250px;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-ms-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+.toggle {
+	margin: 5px 5px 0 0;
+	color: #fff;
+}
